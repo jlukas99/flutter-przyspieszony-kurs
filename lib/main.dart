@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lekcja1/pages/counter.dart';
+import 'package:lekcja1/pages/name.dart';
+import 'package:lekcja1/pages/navigation.dart';
 import 'package:lekcja1/pages/shopping_list.dart';
 import 'package:lekcja1/pages/test.dart';
 
@@ -13,7 +15,14 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ShoppingListPage(),
+      initialRoute: "/",
+      routes: {
+        "/": (context) => NavigationPage(),
+        "licznik": (context) => CounterPage(),
+        "test": (context) => TestPage(),
+        "lista zakupow": (context) => ShoppingListPage(),
+        "nazwa": (context) => NamePage(),
+      },
     );
   }
 }

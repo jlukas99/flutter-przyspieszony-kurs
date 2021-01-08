@@ -4,6 +4,9 @@ class TestPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Kolumny i Wiersze"),
+      ),
       body: Column(
         children: [
           Expanded(

@@ -13,9 +13,7 @@ class _CounterPageState extends State<CounterPage> {
     return Scaffold(
       backgroundColor: Colors.indigoAccent,
       appBar: AppBar(
-        centerTitle: true,
         title: Text("Licznik"),
-        backgroundColor: Colors.redAccent,
       ),
       body: Center(
         child: Column(
