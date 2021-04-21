@@ -24,7 +24,6 @@ class _NamePageState extends State<NamePage> {
             Text(tekst),
             input(),
             buttonOne(),
-            SizedBox(height: 32),
             buttonTwo(),
           ],
         ),
