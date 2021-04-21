@@ -16,7 +16,7 @@ class _CounterPageState extends State<CounterPage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(liczba.toString()),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 setState(() {
                   liczba++;
