@@ -32,16 +32,20 @@ class _CounterPageState extends State<CounterPage> {
             SizedBox(
               height: 32,
             ),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () {
                 setState(() {
                   liczba++;
                 });
               },
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(100),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                ),
               ),
-              color: Colors.redAccent,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
